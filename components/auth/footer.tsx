@@ -25,7 +25,7 @@ const FooterHomepage = ({ siteConfig }: any) => {
       </div>
       <div className="container flex flex-row justify-between items-center mx-auto px-6 text-center border-t pt-4 mt-6">
         <p className="text-sm">
-          &copy; 2024 Edu Class AI. All rights reserved.
+          &copy; 2024 ${siteConfig.name} AI. All rights reserved.
         </p>
         <div className="mt-2">
           <a href="#" className="text-sm mx-2">

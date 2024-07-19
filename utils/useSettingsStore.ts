@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import fetchApi from "./fetchApi";
+import { siteConfig } from "@/config/site";
 
 interface SettingsData {
   id: number;
@@ -23,7 +24,7 @@ export const useSettingsStore = create<SettingsState>((set) => ({
   loading: true,
   settings: {
     id: 0,
-    project_name: "EduClassAI",
+    project_name: siteConfig.name,
     university_name: "University",
     logo: "/logo_default.png",
     banner: "/bg-lms.png",

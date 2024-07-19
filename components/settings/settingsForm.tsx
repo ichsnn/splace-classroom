@@ -8,6 +8,7 @@ import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import { useSettingsStore } from "@/utils/useSettingsStore";
 import FooterSettings from "./footerSettings";
+import { siteConfig } from "@/config/site";
 
 const CustomRadio = (props: any) => {
   const { children, ...otherProps } = props;
@@ -85,7 +86,7 @@ const SettingForm = ({ step, steps }: any) => {
     ];
 
     const datas = new FormData(e.target as HTMLFormElement);
-    datas.append("project_name", "EduClassAI");
+    datas.append("project_name", siteConfig.name);
     datas.append("university_name", nameUniversity);
     datas.append("contact_us", JSON.stringify(contacts));
     datas.append(

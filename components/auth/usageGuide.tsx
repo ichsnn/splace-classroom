@@ -25,7 +25,7 @@ const UsageGuide = ({ learnMore, guide }: any) => {
             LMS Usage Guide
           </Button>
         ) : (
-          <Button className="border-dark-blue border-2 bg-transparent text-dark-blue font-semibold">
+          <Button className="border-white border-2 bg-transparent text-white font-semibold">
             Learn More
           </Button>
         )}

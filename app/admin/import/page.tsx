@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import FileUpload from "./fileUploud";
 import toast from "react-hot-toast";
+import { siteConfig } from "@/config/site";
 
 export default function Imports() {
   const router = useRouter();
@@ -70,7 +71,7 @@ export default function Imports() {
   return (
     <AdminLayout
       title="Import Data"
-      subtitle="Import data from your university to EduClassAI"
+      subtitle={`Import data from your university to ${siteConfig.name}`}
     >
       <form
         onSubmit={handleSubmit}
